@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "smart-grid": "^2.1.2"
+  },
+  "dependencies": {
+    "sass": "^1.69.5",
+    "slick-carousel": "^1.8.1"
+  }
+}

@@ -1,0 +1,104 @@
+.skills {
+    padding-top: 80rem;
+    padding-bottom: 100rem;
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    @media (max-width: 699px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__row-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 70rem;
+        @media (max-width: 699px) {
+            margin-bottom: 40px;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200rem, 1fr));
+        grid-auto-rows: 300rem;
+        grid-template-rows: 300rem;
+        gap: 35rem;
+        @media (max-width: 999px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__item-list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $bgLightColor;
+
+        border-radius: 10rem;
+        cursor: pointer;
+        @media (max-width: 999px) {
+            min-height: 120rem;
+            max-width: 599rem;
+            margin: 0 auto;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 30rem;
+        }
+    }
+    &__logo-item-list {
+        margin: 0 auto;
+        margin-bottom: 15rem;
+        fill: #F0E3CA;
+        @media (max-width: 999px) {
+            height: 62rem;
+            margin: 0;
+            margin-right: 15rem;
+            width: 130rem;
+        }
+    }
+    &__title-item-list {
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        font-size: 28rem;
+        line-height: 1;
+        @media (max-width: 699px) {
+            font-size: 20rem;
+        }
+    }
+}
+
+.skills__logo-item-list.logo-html {
+    &:hover {
+        fill: $hoverIconHtml;
+        transition: 0.3s;
+    }
+}
+.skills__logo-item-list.logo-css {
+    &:hover {
+        fill: $hoverIconCss;
+        transition: 0.3s;
+    }
+}
+.skills__logo-item-list.logo-js {
+    &:hover {
+        fill: $hoverIconJS;
+        transition: 0.3s;
+    }
+}
+.skills__logo-item-list.logo-scss {
+    &:hover {
+        fill: $hoverIconScss;
+        transition: 0.3s;
+    }
+}
+.skills__logo-item-list.logo-git {
+    &:hover {
+        fill: $hoverIconGit;
+        transition: 0.3s;
+    }
+}

@@ -1,0 +1,87 @@
+.projects {
+    padding-top: 100rem;
+    padding-bottom: 100rem;
+    @media (max-width: 1199px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media (max-width: 699px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__row-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 70px;
+
+        @media (max-width: 699px) {
+            margin-bottom: 40px;
+        }
+    }
+    // Scroll-bar
+    &__list-card {
+        display: flex;
+        column-gap: 15px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__item-card {
+        display: flex;
+        flex: 1 1 auto;
+    }
+}
+
+/*Card*/
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 340rem;
+    background-color: $cardOverlay;
+    padding: 40rem;
+    @media (max-width: 699px) {
+        width: 280rem;
+    }
+    &__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__description-technology {
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $txtAccent;
+    }
+    &__lead {
+        font-size: 16px;
+        margin-bottom: 20px;
+        @media (max-width: 699px) {
+            font-size: 13px;
+        }
+        & span {
+            color: $txtColorGray;
+        }
+    }
+    &__btn.btn {
+        text-align: center;
+        max-width: 230rem;
+        margin-top: auto;
+        display: inline-block;
+    }
+}
