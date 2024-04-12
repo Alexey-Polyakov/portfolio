@@ -24,7 +24,8 @@
     &__list-card {
         display: flex;
         column-gap: 15px;
-        overflow: auto;
+        // overflow: auto;
+        flex-wrap: wrap;
         &::-webkit-scrollbar {
             display: none;
         }
