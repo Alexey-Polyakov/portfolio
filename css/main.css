@@ -810,6 +810,7 @@ fieldset {
     }
 }
 .projects__list-card {
+    margin-left: 130px;
     padding-left: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -822,6 +823,9 @@ fieldset {
 
     @media(max-width:899px){
         flex-wrap: nowrap;
+    }
+    @media(max-width:399px){
+        margin-left:0;
     }
 }
 .projects__list-card::-webkit-scrollbar {
