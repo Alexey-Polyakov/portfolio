@@ -26,14 +26,19 @@
         column-gap: 15px;
         // overflow: auto;
         flex-wrap: wrap;
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
     }
     &__item-card {
         display: flex;
         flex: 1 1 auto;
     }
+}
+
+.slider {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*Card*/

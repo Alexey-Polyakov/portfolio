@@ -809,6 +809,11 @@ fieldset {
         margin-bottom: 40px;
     }
 }
+
+.slider{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .projects__list-card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -826,9 +831,9 @@ fieldset {
         margin-left:0;
     }
 }
-.projects__list-card::-webkit-scrollbar {
+/* .projects__list-card::-webkit-scrollbar {
     display: none;
-}
+} */
 .projects__item-card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -853,9 +858,9 @@ fieldset {
     padding: 40rem;
 }
 @media (max-width: 699px) {
-    .card {
+    /* .card {
         width: 280rem;
-    }
+    } */
 }
 .card__image {
     position: absolute;
