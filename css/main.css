@@ -810,7 +810,6 @@ fieldset {
     }
 }
 .projects__list-card {
-    margin-left: 130px;
     padding-left: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
